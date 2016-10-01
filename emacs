@@ -4,6 +4,11 @@
   (require 'evil)
   (evil-mode 1)
   (add-hook 'LaTeX-mode-hook 'flyspell-mode)
+
+  (load (expand-file-name "~/quicklisp/slime-helper.el"))
+  ;; Replace "sbcl" with the path to your implementation
+  (setq inferior-lisp-program "sbcl")
+
  
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
